@@ -1,6 +1,6 @@
 # HardwareLab
-ARM Assembly, C, C++, reverse engineering, exploit development and debugging
-This lab is catered towards learning ARM assembly with intent to understand reverse engineering and exploit development.
+<p>ARM Assembly, C, C++, reverse engineering, exploit development and debugging</p>
+<p>This lab is catered towards learning ARM assembly with intent to understand reverse engineering and exploit development.</p>
 
 ## Manual Setup
 ### Using Virtual Machine
@@ -51,16 +51,16 @@ Disklabel type: dos
 Disk identifier: 0x432b3940
 
 Device                          Boot  Start     End Sectors Size Id Type
-2017-03-02-raspbian-jessie.img1        8192  137215  129024  63M  c W95 FAT32 (LBA)
-2017-03-02-raspbian-jessie.img2      137216 8581119 8443904   4G 83 Linux
+2017-03-02-raspbian-jessie.img1        8192  92159  83968  41M  c W95 FAT32 (LBA)
+2017-03-02-raspbian-jessie.img2      92160 8369151 8276992   4G 83 Linux
 ```
 
-<p>Multiply the value of filesystem (.img2) that start at <code>137216</code> by <code>512</code>. Use the resulting value as an offset in the following command:
+<p>Multiply the value of filesystem (.img2) that start at <code>137216</code> by <code>512</code>. Use the resulting <code>47185920</code> value as an offset in the following command:
 
 ```
 sudo mkdir /mnt/raspbian
 
-sudo mount -v -o offset=70254592 -t ext4 ~/qemu_vms/<your-img-file.img> /mnt/raspbian
+sudo mount -v -o offset=47185920 -t ext4 ~/qemu_vms/<your-img-file.img> /mnt/raspbian
 ```
 
 <p>Once you have made sure that it mounts, we'll unmount and emulate it on Qemu with the following command:</p>
