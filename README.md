@@ -75,8 +75,8 @@ qemu-system-arm -kernel ~/qemu_vms/<your-kernel-qemu> -cpu arm1176 -m 256 -M ver
 
 <p>The Qemu will launch a GUI of the Raspbian OS as shown below</p>
 
-  
-![RoQ](https://user-images.githubusercontent.com/76940116/140804233-5bff2435-f9df-4697-9e43-6e59221d839e.PNG)
+
+![RoQc](https://user-images.githubusercontent.com/76940116/140804548-92cbc10e-f472-4d75-bcd9-bf3398cb6279.png)
 
 
 ### Using Raspberry Pi
